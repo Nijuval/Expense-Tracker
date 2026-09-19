@@ -3,3 +3,8 @@ def add_category(path,category):
     data= data_load.import_data(path)
     data["categories"].append(category)
     data_load.write_data(data,path)
+
+def add_expense(path,expense):
+    data= data_load.import_data(path)
+    data["expenses"].append(expense)
+    data_load.write_data(data,path)

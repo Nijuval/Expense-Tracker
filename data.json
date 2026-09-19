@@ -126,6 +126,13 @@
       "category": "Shopping",
       "description": "Book purchase",
       "amount": 18.25
+    },
+    {
+      "id": 5,
+      "category": "water",
+      "date": "2026-07-12",
+      "description": "water expenses",
+      "amount": 45.33
     }
   ],
   "monthlyBudget": {
