@@ -10,7 +10,7 @@ if __name__ == "__main__":
     exit = False
     data = data_load.import_data("data.json")
     while not exit:
-        user_input = input("Options: \n1. Calculate balance\n2. Transaction history\n3. Total Expenses\n4. date and time\n5. category\n6. each category\n7. total by category \n8.add catergory \n8. exit\n10.add new expense: ")
+        user_input = input("Options: \n1. Calculate balance\n2. Transaction history\n3. Total Expenses\n4. date and time\n5. category\n6. each category\n7. total by category \n8.add catergory \n9,add budget\n10. add new expense\n Enter your choice: ")
         if user_input == "1":
             print("""\n--------""")
             print(balance.balance(data))
@@ -36,7 +36,11 @@ if __name__ == "__main__":
         elif user_input =="8":
             category=input("enter your category : ")
             print(write_operation.add_category("data.json",category))
-        elif user_input == "9":
+        elif user_input =="9":
+            budget_name=input("enter your budget name : ")
+            budget=int(input("enter your budget : "))
+            print(write_operation.add_budget("data.json",budget_name,budget))
+        elif user_input == "10":
             exit = True
         elif user_input == "10":
             id = int(input("id"))

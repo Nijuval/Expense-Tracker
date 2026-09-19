@@ -8,3 +8,8 @@ def add_expense(path,expense):
     data= data_load.import_data(path)
     data["expenses"].append(expense)
     data_load.write_data(data,path)
+
+def add_budget(path,budget_name,budget):
+    data=data_load.import_data(path)
+    data["monthlyBudget"][budget_name] = budget
+    data_load.write_data(data,path)
